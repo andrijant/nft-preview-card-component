@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Outfit:wght@300;400;600&family=Roboto:wght@400;700&display=swap');
+/* basic */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --blueMainBG: hsl(217, 54%, 11%);
+    --blueCardBG: hsl(216, 50%, 16%);
+    --blueLine: hsl(215, 32%, 27%);
+    --blueShadow: #0b1629;
+    --white: hsl(0, 0%, 100%);
+    --softBlue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+
+
+}
+body {
+    background-color: var(--blueMainBG);
+    font-family: 'Outfit', sans-serif;
+    color: hsl(0, 0%, 100%);
+    
+    
+}
+p {
+    color: var(--softBlue);
+}
+.container {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+/* card */
+.card-body {
+    width: 350px;
+    height: 580px;
+    background-color: var(--blueCardBG);
+    border-radius: 12px;
+    box-shadow: 0px 0px 0px 20px var(--blueShadow), 0px 0px 25px 45px var(--blueShadow);
+    padding: 25px;
+    
+    
+}
+.card-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-image: url(./images/image-equilibrium.jpg);
+    width: 300px;
+    height: 300px;
+    border-radius: 12px;
+    position: relative;
+}
+
+.hidden-icon {
+    width: auto;
+    height: 45px;
+    border-radius: 12px;
+    display: none;
+}
+.card-image:hover {
+    cursor: pointer;
+    background-image:linear-gradient(rgb(0,255,247, 0.5),rgb(0,255,247, 0.5)), url(./images/image-equilibrium.jpg);
+    
+    
+}
+.card-image:hover .hidden-icon{
+    display: block;
+    cursor: pointer;
+}
+
+h1:hover {
+    cursor: pointer;
+    color: var(--cyan);
+}
+.card-text {
+    padding: 15px 0;
+}
+.card-text p {
+    padding: 15px 0;
+    line-height: 1.4;
+}
+
+.card-icons {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+.ethereum {
+    color: var(--cyan);
+    display: flex;
+    align-items: flex-end;
+}
+
+.ethereum h4 {
+    margin-left: 8px;
+}
+.clock {
+    color: var(--softBlue);
+    display: flex;
+    align-items: flex-end;
+}
+
+.clock p {
+    margin-left: 8px;
+}
+
+hr {
+    color: var(--blueLine);
+    margin: 10px 0;
+}
+.line {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: var(--blueLine);
+    margin: 15px 0;
+}
+.card-footer {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+
+}
+.card-footer span {
+    color: var(--white);
+}
+.card-footer span:hover {
+    color: var(--cyan);
+    cursor: pointer;
+}
+
+
+.card-footer img {
+    width: 35px;
+    border-radius: 50%;
+    border: 1px solid var(--white);
+    margin-right: 15px;
+}
+footer {
+    display: block;
+    padding-top: 0px;
+}
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+@media (max-width: 375px) {
+    .container {
+        height: auto;
+        
+    }
+    footer {
+        padding-top: 0px;
+    }
+}
